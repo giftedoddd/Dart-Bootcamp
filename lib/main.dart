@@ -67,6 +67,7 @@ void operators(int firstNum, int secondNum){
 Collections:
 List: Lists is ordered group of objects.
 Set: Set is unordered collection of unique items.
+Map: A map is an unordered collection of key:value pairs 
 */
 
 void lists(){
@@ -87,7 +88,14 @@ void sets(){
   var secondSet = {"hello", "false", false};
 }
 
+void maps(){
+  const Map <String, int> namesAndAges = {
+    "Alex": 40,
+    "Anna": 28,
+    "me": 24
+  };
+}
 
 void main(){
-  
+
 }
