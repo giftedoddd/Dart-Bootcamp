@@ -97,7 +97,7 @@ void maps(){
 }
 // Playing with null types.
 void nullSafety(){
-// var int number = 10; This line will throw an error.
+  // var int number = 10; This line will throw an error.
   String? name  = null; // This means variable name can sometimes be null.
   name = "Justin"; // Change null to a value.
 
