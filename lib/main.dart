@@ -95,6 +95,26 @@ void maps(){
     "me": 24
   };
 }
+// Playing with null types.
+void nullSafety(){
+// var int number = 10; This line will throw an error.
+  String? name  = null; // This means variable name can sometimes be null.
+  name = "Justin"; // Change null to a value.
+
+  // List <String>? myList = ["hello", null]; This will throw an error. cause we
+  // said list sometime can be null not the value inside
+  List <String?> myList = ["hello", null]; // This will work.
+
+  const firstNumber = null;
+  const secondNumber = null;
+  const thirdNumber = 30;
+  // Assigns first non-Null value(from left to right) to the variable.
+  int firstNonNull = firstNumber ?? secondNumber ?? thirdNumber;
+  // Assign a value to a variable if variable is null.
+  String? myNumber = null;
+  myNumber ??= "10";
+  myNumber ??= "22";
+}
 
 void main(){
 
