@@ -114,6 +114,9 @@ void nullSafety(){
   String? myNumber = null;
   myNumber ??= "10";
   myNumber ??= "22";
+
+  String? myStr = null;
+  final myStrLength = myStr?.length;
 }
 
 void main(){
